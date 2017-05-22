@@ -1,0 +1,27 @@
+# Create a program that asks the user for a number and then prints out a list of all the divisors of that number.
+
+list = []
+
+def divisible_me (user_integer):
+
+	x = range(1,user_integer)
+
+	for number in x:
+		if (user_integer%number == 0):
+			list.append(number)
+	
+	list.append(user_integer)
+
+	print (list)
+
+def check_if_integer():
+	user_number = raw_input("Give me a whole number and I will tell you what numbers will divide into it evenly:\n")
+
+	try:
+   		user_integer = int(user_number)
+   		divisible_me(user_integer)
+	except ValueError:
+   		print("\nThat's not an integer! Pleases use whole numbers only.") 
+   		check_if_integer()
+
+check_if_integer()
