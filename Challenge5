@@ -14,6 +14,9 @@ Write this in one line of Python.
 import random
 from random import randint
 
-random_list = random.sample(xrange(1, 101), randint(1,101))
+random_list1 = random.sample(xrange(1, 101), randint(1,101))
+random_list2 = random.sample(xrange(1, 101), randint(1,101))
 
-print random_list
+x = list(set(random_list1).intersection(set(random_list2)))
+
+print random_list1, "\n", random_list2, "\n", x 
