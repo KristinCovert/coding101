@@ -1,0 +1,8 @@
+# Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
+user_string = raw_input("Do you know what a palindrome is? \n Let's see... give me one! \n")
+
+if user_string[::] == user_string[::-1]:
+	print "You're good, %s is a palindrome!" % (user_string)
+
+else:
