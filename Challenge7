@@ -1,0 +1,8 @@
+# Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it. So this boils down to a variable you are going to populate a list with and the for loop that has the code to do the populating.  Thus number is what will be in the even list once the numbers from the made list are evaluated.
+
+import random
+from random import randint
+
+make_list = random.sample(xrange(1, 101), randint(1,101))
+even_list = [number for number in make_list if number % 2 == 0]
+print make_list, "\n\n", even_list
