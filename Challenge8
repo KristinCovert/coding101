@@ -1,0 +1,28 @@
+#Challenge 8 - http://www.practicepython.org/exercise/2014/03/26/08-rock-paper-scissors.html
+
+# Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)
+
+# Remember the rules:
+
+# Rock beats scissors
+# Scissors beats paper
+# Paper beats rock
+
+# game_on = input('Shall we play rock-paper-scissors? y or n' )
+#   while game_on != "n":
+#     game_on = input('Shall we play rock-paper-scissors? y or n' )
+
+choices = ["rock", "paper", "scissors"]
+
+user_move = raw_input("Let's play rock-paper-scissors! Please give tell me your move...\n").lower()
+
+check spelling against a list
+rules to be set
+have computer randomly pick from list
+tell user the random choice
+then compare to rules
+tell user who wins
+
+
+
+print "\n", user_move
