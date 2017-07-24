@@ -1,4 +1,4 @@
-"""Challenge 10 - http://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html
+"""Challenge 9 - http://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html
 
 Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right. (Hint: remember to use the user input lessons from the very first exercise)
 
