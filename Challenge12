@@ -1,0 +1,19 @@
+# Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function.
+
+def reduce_list():
+	#use a counter to get 5 numbers from the user
+	count = 0
+	number_list = []
+	print "We are going to ask for 5 numbers."
+	print "Please use only real integers"
+
+	while count <= 4:
+		
+		number_list.append(int(raw_input("Your number is:\n")))
+		count += 1
+	
+	#reduce_list and retiurn it to user
+	print number_list	
+	print "your first and last numbers were:\n", number_list[0::len(number_list)-1]
+
+reduce_list()
