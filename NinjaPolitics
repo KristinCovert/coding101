@@ -1,0 +1,25 @@
+class Ninja:
+    name = ''
+
+    def __init__(self, name):
+        self.name = name
+
+    def take_a_hit(self):
+        print(self.name + ': nooooooo!')
+
+    def take_a_kick(self):
+        print(self.name + ': whoooa, that was so uncalled for')
+
+    def hit(self, other_ninja):
+        print(self.name + ': hiya! i swipe you with my hand.')
+        other_ninja.take_a_hit()
+
+    def kick(self, other_ninja):
+        print(self.name + ': watch out for my lightning-fast legs')
+        other_ninja.take_a_kick()
+
+    def jump(self):
+        print(self.name + ': try to get me now, as I LEAP over you!')
+
+    def duck(self):
+        print(self.name + ': I bet you didnt expect me to duck there, huh?')
